@@ -1,0 +1,175 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+    "display": {
+      "key": {
+        "width": 10
+      },
+      "size": {
+        "binaryPrefix": "jedec"
+      },
+      "separator": "  ›  ",
+      "color": {
+        "keys": "cyan",
+        "output": "white"
+      },
+      "bar": {
+        "char": {
+          "elapsed": "▰",
+          "total": "▱"
+        },
+        "border": { "left": "[", "right": "]" },
+        "width": 12
+      },
+      "percent": {
+        "type": 3,
+        "green": 40,
+        "yellow": 75
+      }
+    },
+    "logo": {
+      "type": "chafa",
+      "source": "/home/lukas/Bilder/systempics/cat.png",
+      "chafa": {
+        "symbols": "block+border+space-wide-inverted"
+      }
+    },
+    "modules": [
+      {
+        "type": "title",
+        "color": {
+          "user": "cyan",
+          "at": "bright_black",
+          "host": "bright_white"
+        }
+      },
+      "break",
+      {
+        "type": "custom",
+        "key": " ",
+        "format": "\u001b[36m┌── System \u001b[90m─────────────────────────────────────\u001b[0m"
+      },
+      {
+        "type": "os",
+        "key": "os",
+        "keyColor": "cyan",
+        "format": "{name}"
+      },
+      {
+        "type": "kernel",
+        "key": "kernel",
+        "keyColor": "cyan"
+      },
+      {
+        "type": "host",
+        "key": "host",
+        "keyColor": "cyan"
+      },
+      {
+        "type": "uptime",
+        "key": "uptime",
+        "keyColor": "cyan"
+      },
+      {
+        "type": "datetime",
+        "key": "date",
+        "keyColor": "cyan",
+        "format": "{day-pretty} {month-pretty} {year}  {hour-pretty}:{minute-pretty}"
+      },
+      {
+        "type": "custom",
+        "key": " ",
+        "format": "\u001b[32m├── Hardware \u001b[90m────────────────────────────────\u001b[0m"
+      },
+      {
+        "type": "cpu",
+        "key": "cpu",
+        "keyColor": "green",
+        "format": "{name}  \u001b[90m@ {freq-max}\u001b[0m"
+      },
+      {
+        "type": "gpu",
+        "key": "gpu",
+        "keyColor": "green"
+      },
+      {
+        "type": "memory",
+        "key": "ram",
+        "keyColor": "green",
+        "percent": { "type": 3, "green": 40, "yellow": 75 }
+      },
+      {
+        "type": "disk",
+        "key": "disk",
+        "keyColor": "green",
+        "folders": ["/"],
+        "percent": { "type": 3, "green": 40, "yellow": 75 }
+      },
+      {
+        "type": "swap",
+        "key": "swap",
+        "keyColor": "green",
+        "percent": { "type": 3, "green": 40, "yellow": 75 }
+      },
+      {
+        "type": "custom",
+        "key": " ",
+        "format": "\u001b[35m├── Desktop \u001b[90m──────────────────────────────────\u001b[0m"
+      },
+      {
+        "type": "de",
+        "key": "de",
+        "keyColor": "magenta"
+      },
+      {
+        "type": "wm",
+        "key": "wm",
+        "keyColor": "magenta",
+        "format": "{pretty-name}"
+      },
+      {
+        "type": "theme",
+        "key": "theme",
+        "keyColor": "magenta",
+        "format": "{1}"
+      },
+      {
+        "type": "display",
+        "key": "display",
+        "keyColor": "magenta",
+        "compactType": "original-with-refresh-rate"
+      },
+      {
+        "type": "custom",
+        "key": " ",
+        "format": "\u001b[33m├── Terminal \u001b[90m─────────────────────────────────\u001b[0m"
+      },
+      {
+        "type": "shell",
+        "key": "shell",
+        "keyColor": "yellow",
+        "format": "{pretty-name}"
+      },
+      {
+        "type": "terminal",
+        "key": "term",
+        "keyColor": "yellow"
+      },
+      {
+        "type": "packages",
+        "key": "pkgs",
+        "keyColor": "yellow"
+      },
+      {
+        "type": "custom",
+        "key": " ",
+        "format": "\u001b[90m└──────────────────────────────────────────────\u001b[0m"
+      },
+      "break",
+      {
+        "type": "custom",
+        "key": " ",
+        "format": "\u001b[36m◆ \u001b[32m◆ \u001b[35m◆ \u001b[33m◆ \u001b[34m◆ \u001b[31m◆ \u001b[0m  CachyOS"
+      },
+      "break"
+    ]
+  }
